@@ -4,6 +4,9 @@ const express = require('express');
 //assign the app to use the API
 const app = express();
 
+//config the app to use the public folder
+app.use(express.static('public'));
+
 //set the app to use views folder for more organised app
 app.set('views', 'views')
 
